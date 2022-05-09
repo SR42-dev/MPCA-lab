@@ -1,0 +1,19 @@
+.TEXT
+	LDR R1, =A
+	LDR R2, =B
+	LDR R3, [R1]
+	LDR R4, [R2]
+	
+	SUB R5, R4, R3
+	BEQ Eq
+		SUB R6, R3, R4
+	Eq: 
+		ADD R6, R3, R4
+	
+	SWI 0X011
+
+	
+.DATA
+	A: .WORD 0X00000011
+	B: .WORD 0X00000011
+
