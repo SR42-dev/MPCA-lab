@@ -1,0 +1,21 @@
+programs :
+
+- copy a block of data items from location A to B without ldm/stm
+
+	- full word, byte
+	- try with half word (assignment) [DONE]
+
+- find the sum of n data items in the memory and store the result
+	
+	- half word
+	- try with full word (assignment) [DONE]
+	- try with byte (assignment) [DONE]
+
+general :
+
+- word size : 4 units
+- half word size : 2 units
+- byte size : 1 unit
+
+
+	

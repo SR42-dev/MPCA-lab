@@ -1,0 +1,33 @@
+general :
+
+- arm has 13 general purpose registers & 3 special purpose (r13, r14, r15)
+- each resistor holds 32 bits
+- cpsr (current program status register) holds thepoint where control jump occurs and hands it over to spsr
+- spsr (saved program status register) tells the user where the program was left off
+- arm supports little & big endian
+
+- arm supports 6 data types :
+
+	- 8 bit signed & unsigned
+	- 16 bit signed & unsigned half words with 2 byte boundaries
+	- 32 bit signed and unsigned words aligned on 4 byte boundaries
+
+- load & store architecture :
+	
+	- load copies instructions from memory to register
+	- store copies instructions from register to memory
+	- memory to memory transfer is not done by arm
+	
+tasks :
+
+1.a) write an ALP(assembly language program) using ARM instruction set to add and subtract 2 32 bit numbers in registers
+1.b) write an ALP(assembly language program) using ARM instruction set to demonstrate logical operations with 32 bit operators in registers
+1.c) write an ALP(assembly language program) using ARM instruction set to add 5 32 bit numbers in registers
+
+task notes :
+
+- data processing is done by MOV, ADD, SUB
+- SWI 0x011 : software interrupt tells the computer that the program has concluded, any value greater than 10 works for this
+- MOV : move the 32 bit value
+- MVN : move the not of the 32 bit segment
+- LSL : logical left shift by 2 bits
